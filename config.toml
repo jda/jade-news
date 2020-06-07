@@ -9,4 +9,5 @@ feeds = [
     "https://jade.wtf/index.xml",
     "https://themargins.substack.com/feed.xml",
     "https://joy.recurse.com/feed.atom",
+    "https://cooltrainer.org/feed.xml",
 ]
