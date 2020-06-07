@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jade's Newsfeed</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+			body {
+				font-family: "Nanum Myeongjo", serif;
+				line-height: 1.7;
+				max-width: 600px;
+				margin: 50px auto 50px;
+				padding: 0 12px 0;
+				height: 100%;
+			}
+
+			li {
+				padding-bottom: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>News</h1>
+
+		<ol>
+			<li><a href="https://joy.recurse.com/posts/831-deep-fake-birdsong">Deep Fake Birdsong</a> (joy.recurse.com)</li>
+			<li><a href="https://joy.recurse.com/posts/828-etymology-explorer">Etymology Explorer</a> (joy.recurse.com)</li>
+			<li><a href="https://joy.recurse.com/posts/823-mimic">Mimic</a> (joy.recurse.com)</li>
+			<li><a href="https://joy.recurse.com/posts/830-yubikey-agent">yubikey-agent</a> (joy.recurse.com)</li>
+			<li><a href="https://joy.recurse.com/posts/826-start-a-meeting-quickly-from-the-comfort-of-your-command-line">Start a meeting quickly from the comfort of your command line.</a> (joy.recurse.com)</li>
+			<li><a href="https://themargins.substack.com/p/facebook-and-humans">Facebook and Humans</a> (themargins.substack.com)</li>
+			<li><a href="https://joy.recurse.com/posts/789-archimedes-cattle-problem">Archimedes&#39; Cattle Problem</a> (joy.recurse.com)</li>
+			<li><a href="https://joy.recurse.com/posts/829-dust-dust">Dust, Dust</a> (joy.recurse.com)</li>
+			<li><a href="https://joy.recurse.com/posts/825-just-how-i-organize-large-rust-programs">Just: How I Organize Large Rust Programs</a> (joy.recurse.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/30/cert/">Not After : May 30 10:48:38 2020 GMT</a> (rachelbythebay.com)</li>
+			<li><a href="https://joy.recurse.com/posts/827-ultimate-tic-tac-toe">Ultimate Tic Tac Toe</a> (joy.recurse.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-may-28th-2020">Links on the Margins - May 28th, 2020</a> (themargins.substack.com)</li>
+			<li><a href="https://joy.recurse.com/posts/824-sandwatch-do-i-have-enough-time-to-make-a-sandwich-while-this-command-runs">Sandwatch - do I have enough time to make a sandwich while this command runs?</a> (joy.recurse.com)</li>
+			<li><a href="https://themargins.substack.com/p/software-will-eat-software-in-a-remote">Software will eat software in a remote-first world</a> (themargins.substack.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/23/nope/">Setting the story straight on quite a few issues</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/22/boarded/">Just some red flags.  No big deal.  Just ignore them.</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/23/gap/">Discovering the hypocrisy gap in reliability the hard way</a> (rachelbythebay.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-may-21st-2020">Links on the Margins - May 21st, 2020</a> (themargins.substack.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/19/abc/">Infra teams: good, bad, or none at all</a> (rachelbythebay.com)</li>
+			<li><a href="https://themargins.substack.com/p/doordash-and-pizza-arbitrage">Doordash and Pizza Arbitrage</a> (themargins.substack.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-may-14th">Links on the Margins - May 14th</a> (themargins.substack.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/07/15/giant/">Your nines are not my nines</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/11/wn/">Whacker News updated for 2020</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/08/feedback/">Responses to reader feedback</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/2020/05/08/metaphors-in-man-pages/">Metaphors in man pages</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/07/serv/">Old box, dumb code, few thousand connections, no big deal</a> (rachelbythebay.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-may-7th-2020">Links on the Margins - May 7th, 2020</a> (themargins.substack.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/06/scale/">A bunch of rants about cloud-induced damage</a> (rachelbythebay.com)</li>
+			<li><a href="https://themargins.substack.com/p/how-silicon-valley-is-not-like-wall">How Silicon Valley is not like Wall Street</a> (themargins.substack.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/05/01/owned/">Bad times in corporate wireless networks</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/04/30/dev/">If you&#39;re hiring, be forthcoming about the dev experience</a> (rachelbythebay.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-april-30th">Links on the Margins - April 30th</a> (themargins.substack.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/04/29/rel/">Rolling out the &#34;push train&#34;</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/04/25/rel/">Moving fleet software releases to a massively sharded scheme</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/2020/04/29/why-strace-doesnt-work-in-docker/">Why strace doesn&#39;t work in Docker</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/04/28/boil/">Boiling the machines when they really needed to just chill</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/2020/04/27/new-zine-how-containers-work/">New zine: How Containers Work!</a> (jvns.ca)</li>
+			<li><a href="https://themargins.substack.com/p/are-billionaires-bad">Are billionaires bad?</a> (themargins.substack.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/04/23/rel/">Releasing software to the fleet far too quickly broke stuff</a> (rachelbythebay.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-april-22nd">Links on the Margins - April 22nd</a> (themargins.substack.com)</li>
+			<li><a href="https://themargins.substack.com/p/invisible-infrastructure-and-the">Invisible infrastructure and the ethics of delivery</a> (themargins.substack.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-april-15th">Links on the Margins - April 15th</a> (themargins.substack.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/04/11/pengrun/">Bored?  How about trying a Linux speed run?</a> (rachelbythebay.com)</li>
+			<li><a href="https://themargins.substack.com/p/science-how-does-it-work">Science, how does it work?</a> (themargins.substack.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-april-8th">Links on the Margins - April 8th</a> (themargins.substack.com)</li>
+			<li><a href="https://themargins.substack.com/p/the-cares-act-amazon-and-labor-supply">The CARES Act, Amazon, and Labor Supply</a> (themargins.substack.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-april-2nd">Links on the Margins - April 2nd</a> (themargins.substack.com)</li>
+			<li><a href="https://jvns.ca/blog/debugging-attitude-matters/">When debugging, your attitude matters</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/03/26/airplay/">Wireless audio sync on Apple TV kills Mac AirPlay audio</a> (rachelbythebay.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-march-25">Links on the Margins (March 25)</a> (themargins.substack.com)</li>
+			<li><a href="https://themargins.substack.com/p/covid-19-and-managing-risk">COVID-19 and Managing Risk</a> (themargins.substack.com)</li>
+			<li><a href="https://themargins.substack.com/p/links-on-the-margins-march-18th">Links on the Margins (March 18th)</a> (themargins.substack.com)</li>
+			<li><a href="https://jvns.ca/blog/2020/03/15/writing-shaders-with-signed-distance-functions/">Getting started with shaders: signed distance functions!</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/03/10/rps/">Silly benchmarks on completely untuned server code</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/03/09/bzzz/">What is the unique value proposition of selling honey?</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/03/07/costly/">We have to talk about this Python, Gunicorn, Gevent thing</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/03/05/bugs/">Popular posts from leaky bug-tracking systems</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/03/04/annoyed/">I tried to fix it, and failed miserably</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/03/03/emoji/">Mind those emoji if you&#39;re working at this place</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/03/02/reasons/">Pondering the reasons why you should work somewhere</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/02/29/poof/">No more pink mustache</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/compensation-questions/">Questions you can ask about compensation</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/02/18/ftp/">Pushing files around with silly and unusual methods</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/02/10/broken/">Oh, don&#39;t worry, I&#39;ve screwed up plenty of things too</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/02/09/horizonta/">Trying to sneak in a sketchy .so over the weekend</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/02/08/miss/">The tools you&#39;d miss if you left a company</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/02/07/kdir/">Trying to be too (io)nice created a &#34;killer&#34; directory</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2020/02/04/scope/">Hacking the &#39;scope from a distant land</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/2020/02/03/new-zine--become-a-select-star/">New zine: Become a SELECT Star!</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/18/oldbash/">Troubleshooting shell scripts that grew slower with age</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/2020/01/05/paperwm/">PaperWM: tiled window management for GNOME</a> (jvns.ca)</li>
+			<li><a href="https://jvns.ca/blog/2019-year-in-review/">2019: Year in review</a> (jvns.ca)</li>
+			<li><a href="https://jvns.ca/blog/2019/12/26/whats-a-server/">&#34;server&#34; is hard to define</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/10/scale/">Taking too much slack out of the rubber band</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/how-tracking-pixels-work/">How tracking pixels work</a> (jvns.ca)</li>
+			<li><a href="https://jvns.ca/blog/twitter-memes-challenge/">Challenge: find Twitter memes with suffix arrays</a> (jvns.ca)</li>
+			<li><a href="https://jvns.ca/blog/2019/12/03/solutions-to-the-tiny-window-manager-challenge/">Solutions to the tiny window manager challenge</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/30/plug/">That packet looks familiar, and that one, and that one...</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/28/sb8200/">Resolving a minor turkey day networking mystery</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/2019/11/25/challenge--make-a-bouncy-window-manager/">Challenge: Write a bouncy window manager</a> (jvns.ca)</li>
+			<li><a href="https://jvns.ca/blog/2019/11/20/what-makes-a-programming-exercise-good/">What makes a programming exercise good?</a> (jvns.ca)</li>
+			<li><a href="https://jvns.ca/blog/2019/11/18/how-containers-work--overlayfs/">How containers work: overlayfs</a> (jvns.ca)</li>
+			<li><a href="https://jvns.ca/blog/2019/11/18/some-notes-on-vector-drawing-apps/">Some notes on vector drawing apps</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/15/board/">Utter frustration with the eval board&#39;s tech support</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/14/zk/">Creating the notion of preview and runout modes for a service</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/13/sdrlag/">The day when starting a receiver fixed the transmitter</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/12/post/">Just how fast is too fast when it comes to web requests?</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/11/dyn/">Control systems, yes, but we have to learn to crawl first</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/09/listen/">Microphones with tattle lights and passive wearables</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/11/01/gb/">Sorcerer&#39;s apprentice mode and busting ghosts</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/2019/10/28/some-research-on-shipping-print-zines/">Some research on shipping print zines</a> (jvns.ca)</li>
+			<li><a href="https://jvns.ca/blog/2019/10/28/sqlite-is-really-easy-to-compile/">SQLite is really easy to compile</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/10/25/enabler/">A push gone very wrong in the name of what, exactly?</a> (rachelbythebay.com)</li>
+			<li><a href="https://jvns.ca/blog/2019/10/21/print-collection-of-my-first-7-zines/">Your Linux Toolbox: a box set of my free zines</a> (jvns.ca)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/10/20/sniff/">Fresh pcaps, free for the asking</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/10/13/firewall/">Engineers without borders, silos, and vendor walls</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/10/05/nxdomain/">Break before make, abstractions, and sleazy ISPs</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/10/03/roll/">Look out for the second 2019 GPS week number rollover</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/10/03/thirst/">Shenanigans in the microkitchen</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/08/08/swap/">Swap, swap, swap, and bad places to work</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/08/04/olddocs/">My take on a BSD/386 filesystem&#39;s contents in 1995</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/08/01/reliability/">Possibly timely items from my reliability list</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/07/21/reliability/">Some items from my &#34;reliability list&#34;</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/12/21/env/">Small stupid things that make up my dev environment</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/03/20/hardware/">Another successful prediction?</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/03/07/strange/">&#34;Oh What a Strange Month it has Been&#34;</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/02/25/destroyer/">Service X, Destroyer of Worlds</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/02/13/loopy/">Infinite loops and doomed machines</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/01/31/evilproxy/">Deliberately skipping encryption for business purposes</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/01/28/oncall/">Feedback: oncall rotations</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/01/14/rotation/">Populating an oncall rotation</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/01/20/quiet/">The night of a cascading failure</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/01/18/keepleft/">This is a bad sign</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/01/09/feedback/">Feedback: canaries, bad managers, pranks, and book 3?</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2019/01/02/feedback/">Feedback roundup: formal education, SWE, SA, or what?</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/12/30/v6/">Potholes to avoid when migrating to IPv6</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/12/29/age/">How the Valley treats its experienced people</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/12/28/intent/">Handling intent for Grandma World</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/12/27/box/">Circular dependencies for provisioning systems</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/12/26/flash/">The other kind of &#34;flash&#34; that we used to worry about</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/12/23/workplace/">Social networking and dog food</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/12/11/ring/">ATDT relief</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/10/23/idle/">Lack of progress exposed by the Canary MacGuffin</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/10/21/audio/">A hidden complication for Linux desktop audio</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/10/09/moat/">Choosing to stay out of the community</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/10/05/recipes/">Disappearing videos and disappointed grandmothers</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/09/08/visa/">Citizenship privileges and corporate performance reviews</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/09/06/test/">The woes of incremental resource drains in big systems</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/08/24/peering/">Private peering issues and focusing on the end user</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/17/company/">Some effects of unchecked company growth</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/07/31/growth/">Blocking the rideshares</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/22/sauce/">Giving away the company&#39;s secret sauce</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/05/15/feedback/">How the feedback mechanism works (spoiler: boring)</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/05/14/feedback/">Feedback: feeds, URLs, uids, LoveSacs and HTML oddities</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/05/13/dates/">Responses to strftime and %G</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/20/iso/">strftime&#39;s alpha-sorted man page vs. well-meaning people</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/05/01/nobody/">You don&#39;t need to be the thing to monitor the thing</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/30/metoo/">Company-wide outages and the tendency to spam &#34;ME TOO&#34;</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/29/core/">Hanging the Linux core dump pipe helper</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/28/meta/">Optimizing your talking points</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/27/uid/">User IDs probably shouldn&#39;t be passed around as ints</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/26/size/">What&#39;s the size of that vector, anyway?</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/25/notequal/">&#34;Culture fit&#34; is a two way street; it&#39;s them, not you</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/24/links/">Timeless writing by other people about workplaces</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/23/pace/">Up or out: tech company leveling and mandatory promotions</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/21/lb/">Interns with toasters: how I taught people about load balancers</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/19/map/">More fun with C&#43;&#43; STL containers and []</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/18/cpu/">Given enough machines, you too may find a processor bug</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/16/signal/">sigaction: see who killed you (and more)</a> (rachelbythebay.com)</li>
+			<li><a href="https://rachelbythebay.com/w/2018/04/15/feedback/">Feedback: ebooks, non-NFS systems, and code ownership</a> (rachelbythebay.com)</li>
+			<li><a href="https://jade.wtf/random/">Random Snippets</a> (jade.wtf)</li>
+			<li><a href="https://jade.wtf/words/">Some Words</a> (jade.wtf)</li>
+			<li><a href="https://jade.wtf/tech-notes/">Tech Notes</a> (jade.wtf)</li>
+			
+		</ol>
+
+		<footer>
+			<p><a href="https://github.com/jda/jade-news">What is this?</a></p>
+			<p>Last updated on 07 June 2020 at 11:00 UTC</p>
+		</footer>
+	</body>
+</html>
