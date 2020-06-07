@@ -1,14 +1,9 @@
 # jade-news
-News Aggregator inspired by github.com/jamesroutley/news.routley.io
-
-## Actions
-On commit of new code, run test suite and generate release if it passes
-On cron run release to update feeds
+News Aggregator inspired by [news.routley.io](github.com/jamesroutley/news.routley.io).
 
 ## Future
-state tracking file of links, locically split fetch and render
-age links out of tracking file, so we gracefully handle 
-articles that get fall off the end of source feed before our expiration
+Add state tracking file of links, age links out of tracking file,
+so we gracefully handle articles that get fall off the end of source feed before our expiration
 
-if feed fetch fails, log error, but keep going
-if feed fetch returns zero links, log warning but keep going
+Can we do this on a branch instead of docs folder? what does that look like?
+why? keeps commit noise out of trunk
