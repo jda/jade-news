@@ -1,0 +1,12 @@
+title = "Jade's News Feed"
+daysOfNews = 60
+template = "news.tmpl"
+outFile = "docs/index.html"
+
+feeds = [
+    "https://jvns.ca/atom.xml",
+    "https://rachelbythebay.com/w/atom.xml",
+    "https://jade.wtf/index.xml",
+    "https://themargins.substack.com/feed.xml",
+    "https://joy.recurse.com/feed.atom",
+]
