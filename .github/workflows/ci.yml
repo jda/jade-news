@@ -18,7 +18,7 @@ jobs:
       uses: actions/setup-go@v2
       id: go
 
-    - name: Check out code into the Go module directory
+    - name: Check out repo
       uses: actions/checkout@v2
 
     - name: Fetch modules
@@ -29,10 +29,3 @@ jobs:
 
     - name: Compile
       run: go build
-    
-    - name: Save
-      uses: actions/upload-artifact@v2
-      if: success()
-      with:
-        name: exec
-        path: jade-news

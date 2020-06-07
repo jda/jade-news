@@ -1,6 +1,11 @@
 name: UpdateFeed
 
 on:
+  push:
+    branches: [ master ]
+    paths:
+      - '**.tmpl'
+      - '**.toml'
   schedule:
     # Run every hour
     - cron: '19 * * * *'
@@ -10,15 +15,18 @@ jobs:
     name: Update
     runs-on: ubuntu-latest
     steps:
+    - name: Set up Go 1.x
+      uses: actions/setup-go@v2
+      id: go
 
     - name: check out repo
       uses: actions/checkout@v2
     
-    - name: Fetch exec
-      uses: actions/download-artifact@v2
-      with:
-        name: exec
-        path: jade-news
+    - name: Fetch go modules
+      run: go get ./...
+
+    - name: Compile
+      run: go build
 
     - name: Fetch feeds
       run: ./jade-news 
