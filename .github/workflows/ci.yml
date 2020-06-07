@@ -21,7 +21,7 @@ on:
     - name: Test
       run: go test -v .
 
-    - name: Build
+    - name: Compile
       run: go build
     
     - name: Save
