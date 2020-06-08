@@ -70,6 +70,17 @@ func main() {
 		glog.Infof("sorted links: %+v", links)
 	}
 
+	// Filter by age
+	notBefore := time.Now().AddDate(0, 0, -conf.Days)
+	filteredLinks := []Link{}
+	for _, l := range links {
+		if l.Published.Before(notBefore) {
+			break
+		}
+		filteredLinks = append(filteredLinks, l)
+	}
+	links = filteredLinks
+
 	out := os.Stdout
 	if !dryrun {
 		out, err = os.Create(conf.OutFile)
