@@ -10,4 +10,5 @@ feeds = [
     "https://themargins.substack.com/feed.xml",
     "https://joy.recurse.com/feed.atom",
     "https://cooltrainer.org/feed.xml",
+    "https://blog.knightsofthelambdacalcul.us/index.xml"
 ]
