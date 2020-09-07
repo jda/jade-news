@@ -8,7 +8,7 @@ feeds = [
     "https://rachelbythebay.com/w/atom.xml",
     "https://jade.wtf/index.xml",
     "https://themargins.substack.com/feed.xml",
-    "https://joy.recurse.com/feed.atom",
     "https://cooltrainer.org/feed.xml",
-    "https://blog.knightsofthelambdacalcul.us/index.xml"
+    "https://blog.knightsofthelambdacalcul.us/index.xml",
+    "https://www.benkuhn.net/index.xml"
 ]
