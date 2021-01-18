@@ -11,5 +11,6 @@ feeds = [
     "https://cooltrainer.org/feed.xml",
     "https://blog.knightsofthelambdacalcul.us/index.xml",
     "https://solar.lowtechmagazine.com/feeds/all-en.atom.xml",
+    "https://jpmens.net/atom.xml",
     "https://www.benkuhn.net/index.xml"
 ]
