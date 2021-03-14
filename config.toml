@@ -13,5 +13,6 @@ feeds = [
     "https://solar.lowtechmagazine.com/feeds/all-en.atom.xml",
     "https://jpmens.net/atom.xml",
     "https://dave.cheney.net/feed/atom",
-    "https://www.benkuhn.net/index.xml"
+    "https://www.benkuhn.net/index.xml",
+    "https://kula.tproa.net/index.xml"
 ]
