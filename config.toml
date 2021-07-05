@@ -14,5 +14,6 @@ feeds = [
     "https://jpmens.net/atom.xml",
     "https://dave.cheney.net/feed/atom",
     "https://www.benkuhn.net/index.xml",
-    "https://kula.tproa.net/index.xml"
+    "https://kula.tproa.net/index.xml",
+    "https://8051enthusiast.github.io/feed.xml"
 ]
